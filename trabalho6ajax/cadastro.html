@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <title> Gossip neuras</title>
+    <meta charset="utf-8">
+</head>
+    <body>
+        <header>
+            <!--Aqui vai ficar o logo da page!!-->
+        </header>
+
+        <main>
+            <div class="corpo">
+                <section>
+                    <h2> Hey, gossiplover!</h2>
+                    <a> Pronto pra descobrir as melhores fofocas do mundo das subcelebridades (e de anônimos também)?</a>
+                    <p>Mas antes de embarcar nessa neura, faça seu cadastro:</p>
+                </section>
+                <p></p>
+                <form id="formulario">
+                    <div class="form-group">                    
+                        <label for="apelido">Apelido do gossiplover:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite o nome" name="apelido">
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="pwd">Crie uma senha:</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="pswd">
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="pwd">Digite seu email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite o email" name="ds">
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="pwd">Insira sua idade:</label>
+                        <input type="number" class="form-control" id="idade" min="18" 
+                        placeholder="Digite sua idade" name="ds">
+                    </div>
+                    
+                    </div>
+                    <p></p>
+                    <input type="button" value="cadastrar" class="btn btn-primary" onclick="cadastra();">
+                    <br></br>
+                    <a>Já é membro do Gossip? Faça seu login</a>
+                    <a href='login.html'> aqui </a>
+                    <a>!</a>  
+                </form>
+            </div>
+            <div class="formulario2">
+                <h2>Buscar dados de usuário</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Nome:</label>
+                        <input type="text" class="form-control" id="nome_lista" placeholder="Digite o nome" name="email">
+                    </div>
+                    <input type="button" value="listar" class="btn btn-primary" onclick="lista();">      
+                </form>
+                <div id="usuario">
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript" src="ajax.js"></script>
+    </body>
+
+</html>
+
